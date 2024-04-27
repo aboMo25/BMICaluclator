@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top|center"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        style="@style/TextAppearance.MaterialComponents.Headline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:text="@string/bmi_calculator">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#DCD4D4"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <TextView
+            style="@style/TextAppearance.Material3.BodyMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/height"
+            android:textSize="20sp">
+
+        </TextView>
+
+        <NumberPicker
+            android:id="@+id/heightPicker"
+            android:layout_width="52dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp">
+
+        </NumberPicker>
+
+        <TextView
+            style="@style/TextAppearance.Material3.BodyMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cm">
+
+        </TextView>
+
+        <TextView
+            style="@style/TextAppearance.Material3.BodyMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:text="@string/weight"
+            android:textSize="20sp">
+
+        </TextView>
+
+        <NumberPicker
+            android:id="@+id/weightPicker"
+            android:layout_width="52dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp">
+
+        </NumberPicker>
+
+        <TextView
+            style="@style/TextAppearance.Material3.BodyMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kg">
+
+        </TextView>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/resultTv"
+        android:padding="15dp"
+        style="@style/TextAppearance.MaterialComponents.Headline4">
+    </TextView>
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/healthyTv"
+        android:padding="15dp"
+        style="@style/TextAppearance.MaterialComponents.Headline4">
+    </TextView>
+
+
+</LinearLayout>
